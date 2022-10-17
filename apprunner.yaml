@@ -3,6 +3,7 @@ runtime: corretto11
 build:
   commands:
     build:
+      - echo $CODEBUILD_BUILD_IMAGE
       - mvn clean package
 run:
   runtime-version: 11.0.16.9.1

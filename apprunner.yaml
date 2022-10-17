@@ -3,6 +3,7 @@ runtime: corretto8
 build:
   commands:
     build:
+      - echo $CODEBUILD_BUILD_IMAGE
       - mvn clean package
 run:
   runtime-version: rs-test
